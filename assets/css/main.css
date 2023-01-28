@@ -38,6 +38,29 @@ body {
 .security {
   cursor: pointer;
 }
+
+.toggle-switch {
+  width: 36px;
+  height: 22px;
+  background: #d9d9d9;
+  border-radius: 100px;
+  position: relative;
+}
+.toggle-switch::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: #b4b4b4;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+.toggle-switch.active::after {
+  left: calc(100% - 22px);
+}
 /* header css end */
 
 /* Media Query */
