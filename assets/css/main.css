@@ -1,0 +1,67 @@
+/* Base Css Start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3f3f3;
+  font-family: "Sofia Sans", sans-serif;
+}
+/* Base Css End */
+
+/* header css start */
+.logo {
+  width: 150px;
+}
+.header-inner {
+  border-bottom: 1px dashed #cdcdcd;
+}
+.security {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.security,
+.toggle-wrap {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  font-weight: normal;
+}
+.security svg {
+  margin-right: 5px;
+  height: 20px;
+  width: 18px;
+}
+.security {
+  cursor: pointer;
+}
+/* header css end */
+
+/* Media Query */
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 120px;
+  }
+  .toggle-menu svg {
+    width: 34px;
+    height: 34px;
+  }
+  .security {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .security svg {
+    margin-right: 0;
+    height: 22px;
+    width: 20px;
+  }
+}
