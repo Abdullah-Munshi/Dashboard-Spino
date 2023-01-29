@@ -271,7 +271,7 @@
     <main>
       <div class="container-fluid px-4">
         <div class="dashboard-outer">
-          <div class="dashboard-left mt-0 position-relative">
+          <div class="dashboard-left mt-0 position-relative d-none d-xl-block">
             <div class="ds-menu">
               <div class="profile-zone">
                 <div class="profile-avater">
@@ -389,7 +389,7 @@
                 <button
                   class="sign-out-btn w-100 position-absolute bottom-0 start-0 end-0 border-0 overflow-hidden"
                 >
-                  SIGNOUT
+                  <span class="d-block pe-3 text-end">SIGNOUT</span>
                   <span
                     class="power-icon d-flex align-items-center justify-content-center"
                     ><img
@@ -401,7 +401,129 @@
               </div>
             </div>
           </div>
-          <div class="dashboard-right">Dashboard right part</div>
+          <div class="dashboard-right">
+            <div class="welcome-wrapper shadow-one mb-4">
+              <div class="welcome-left">
+                <img
+                  class="img-fluid"
+                  src="assets/img/user-large-icon.png"
+                  alt=""
+                />
+              </div>
+              <div class="welcome-right">
+                <p class="welcome-dear">Welcome Dear</p>
+                <h4>Elahe Azizi</h4>
+                <div class="short-info-wrap d-flex flex-wrap">
+                  <div class="short-info">
+                    <p>Registration Date</p>
+                    <span class="s-text">Feb-6-2021</span>
+                  </div>
+                  <div class="short-info">
+                    <p>Last Access</p>
+                    <span class="s-text">Jan-13-2023 09:39:43 PM</span>
+                  </div>
+                  <div class="short-info">
+                    <p>
+                      Referral Link
+                      <span class="copy-btn d-inline-block" role="button"
+                        ><img src="assets/img/copy.png" alt=""
+                      /></span>
+                    </p>
+                    <span class="s-text text-truncate"
+                      ><a
+                        href="#"
+                        class="d-inlne-block text-truncate copyable-link"
+                        >https://espino.ltd/?ref=elahe.az</a
+                      ></span
+                    >
+                  </div>
+                </div>
+                <div class="crud-btns d-flex flex-wrap">
+                  <a href="#" class="rd-btn-2">Edit Profile</a>
+                  <a href="#" class="rd-btn-2 fill-green">Security</a>
+                  <a href="#" class="rd-btn-2">wallet</a>
+                  <a href="#" class="rd-btn-2 fill-red">logout</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-twin-grid">
+              <div
+                class="welcome-right balance-card shadow-one position-relative bg-white"
+              >
+                <div>
+                  <p class="welcome-dear ms-auto text-end">Balance</p>
+                  <h4 class="blance"><span>$</span>287834323.90</h4>
+                  <div class="card-2nd ps-4 ps-lg-5">
+                    <div class="dp-field position-relative mb-4">
+                      <input type="text" placeholder="Enter Amount" />
+                      <span class="doller-sign">$</span>
+                    </div>
+                    <div class="crud-btns grid">
+                      <a href="#" class="rd-btn-2 fill-dark-lebu">Withdraw</a>
+                      <a href="#" class="rd-btn-2 trans-dark-lebu"
+                        >Edit wallet</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user-circle-md">
+                  <img
+                    src="assets/img/user-circle-md.png"
+                    alt=""
+                    class="img-fluid w-100"
+                  />
+                </div>
+              </div>
+              <div>
+                <div class="dpo-wrap shadow-one bg-white mb-4">
+                  <div class="dpo-grid-wrap">
+                    <div>
+                      <h3 class="blk-title">DEPOSITS</h3>
+                      <div class="short-info-wrap two d-flex flex-wrap m-0">
+                        <div class="short-info">
+                          <p>Active Deposits</p>
+                          <span class="s-text">$3751292.22</span>
+                        </div>
+                        <div class="short-info">
+                          <p>Total Deposits</p>
+                          <span class="s-text">$3753421.22</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <a href="#" class="rd-btn-2 fill-green mb-3"
+                        >New Deposit</a
+                      >
+                      <a href="#" class="rd-btn-2 trans-green">My Deposits</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="statis-wrap shadow-one bg-white">
+                  <h3 class="blk-title m-0">STATISTICS</h3>
+                  <div class="short-info-wrap two">
+                    <div class="short-info">
+                      <p>Earnings</p>
+                      <span class="s-text">$375434.22</span>
+                    </div>
+                    <div class="short-info">
+                      <p>Active Referrals</p>
+                      <span class="s-text">232</span>
+                    </div>
+                    <div class="short-info">
+                      <p>Withdrawn</p>
+                      <span class="s-text">$37542.22</span>
+                    </div>
+                    <div class="short-info">
+                      <p>Ref. Commissions</p>
+                      <span class="s-text">$742425.22</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
