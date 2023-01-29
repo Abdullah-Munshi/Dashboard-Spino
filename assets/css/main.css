@@ -514,7 +514,7 @@ body {
 }
 .cmn-ttl-bar {
   display: grid;
-  grid-template-columns: 1fr 2.5fr;
+  grid-template-columns: 1.05fr 2.5fr;
   grid-gap: 30px;
   padding-top: 40px;
   padding-right: 30px;
@@ -528,7 +528,7 @@ body {
   background: #ffecda;
   font-size: 28px;
   color: #6b6b6b;
-  padding: 14px;
+  padding: 14px 20px;
   border-radius: 0 0 50px 0;
   padding-left: 40px;
   font-family: "Poppins", sans-serif;
@@ -557,7 +557,7 @@ body {
   height: 24px;
   padding: 0;
 }
-.search-fm .form-control:focus {
+.form-control:focus {
   border-color: #f2994a;
   box-shadow: 0 0 0 0.25rem rgba(242, 152, 74, 0.25);
 }
@@ -577,7 +577,8 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
 }
-.ticket-right .s-text {
+.ticket-right .s-text,
+.conversations-wrap .s-text {
   color: #6b6b6b;
   font-family: "Roboto", sans-serif;
   margin-bottom: 15px;
@@ -647,6 +648,10 @@ body {
   border-radius: 0;
   height: 50px;
   padding: 0 15px;
+  transition: 0.3s;
+}
+.form-control.type-2:focus {
+  border-color: #f2994a;
 }
 textarea.form-control.type-2 {
   height: 180px;
@@ -668,6 +673,56 @@ textarea.form-control.type-2 {
   min-width: 150px;
 }
 /* open-ticket page css end */
+
+/* ticket-details page css start */
+
+.conversations-wrap .rw-conv:not(:last-child) {
+  border-bottom: 1px dashed #9b9b9b;
+}
+.rw-conv {
+  padding: 20px 0;
+}
+.conv-date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #31506f;
+  line-height: 1;
+}
+.replyer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #f2994a;
+  line-height: 1;
+  margin: 0;
+}
+.rw-conv p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: #858585;
+  margin: 0;
+}
+.reply-head {
+  margin-bottom: 6px;
+}
+.form-select.type-3 {
+  border-color: #f2994a;
+  border-radius: 30px 0px 30px;
+  height: 40px;
+  padding: 0px 26px;
+  cursor: pointer;
+  width: auto;
+}
+/* ticket-details page css end */
 
 /* Media Query */
 
@@ -901,6 +956,9 @@ textarea.form-control.type-2 {
   .ticket-left h4 {
     font-size: 20px;
   }
+  textarea.form-control.type-2 {
+    height: 120px;
+  }
 }
 @media screen and (max-width: 480px) {
   .statis-wrap .short-info-wrap.two {
@@ -912,5 +970,8 @@ textarea.form-control.type-2 {
   }
   .ticket-right {
     grid-template-columns: 1fr;
+  }
+  .twin-btns .min-sm {
+    min-width: 140px;
   }
 }
