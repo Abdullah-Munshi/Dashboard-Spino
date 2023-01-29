@@ -98,7 +98,8 @@ body {
   opacity: 0;
   visibility: hidden;
 }
-.dropdown-menu.style-1 {
+.dropdown-menu.style-1,
+.dashboard-left {
   background: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -226,6 +227,15 @@ body {
   margin-bottom: 46px;
 }
 /* header css end */
+
+/* dashboard css start */
+.dashboard-outer {
+  display: grid;
+  grid-template-columns: 220px auto;
+  grid-gap: 24px;
+  padding: 40px 0;
+}
+/* dashboard css end */
 
 /* Media Query */
 
