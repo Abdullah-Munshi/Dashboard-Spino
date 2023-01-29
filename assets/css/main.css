@@ -133,6 +133,13 @@ body {
   color: #dd7e24;
   font-size: 13px;
   line-height: 1;
+  transition: 0.3s;
+}
+.edit-profile:hover svg path {
+  transition: 0.3s;
+}
+.edit-profile:hover svg path {
+  fill: #dd7e24;
 }
 .profile-zone,
 .balanace-zone {
@@ -221,6 +228,10 @@ body {
   grid-template-columns: auto 56px;
   align-items: center;
   border-radius: 0 0 10px 10px;
+  transition: 0.3s;
+}
+.sign-out-btn:hover {
+  background-color: #ce686e;
 }
 .power-icon {
   background-color: #ce686e;
@@ -492,11 +503,11 @@ body {
 /* dashboard css end */
 
 /* support-ticket page css start */
-
 .cmn-container {
   filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.06));
   border-radius: 100px 10px 10px 10px;
   background-color: #fff;
+  min-height: 587px;
 }
 .cmn-pad-wrap {
   padding: 30px 40px;
@@ -617,6 +628,46 @@ body {
   line-height: 1;
 }
 /* support-ticket page css end */
+
+/* open-ticket page css start */
+
+.input-wrap label {
+  font-size: 14px;
+  color: #adadad;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-control.type-2 {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border: 0;
+  border-bottom: 2px solid #e0e0e0;
+  border-radius: 0;
+  height: 50px;
+  padding: 0 15px;
+}
+textarea.form-control.type-2 {
+  height: 180px;
+  padding-top: 10px;
+}
+
+.rd-btn-2.fill {
+  background-color: #f2994a;
+  color: #fff;
+}
+.rd-btn-2.fill:hover {
+  background-color: transparent;
+  color: #f2994a;
+}
+.type-2 .cmn-ttl-bar-right {
+  justify-content: flex-end;
+}
+.min-sm {
+  min-width: 150px;
+}
+/* open-ticket page css end */
 
 /* Media Query */
 
