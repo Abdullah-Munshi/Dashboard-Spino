@@ -732,8 +732,170 @@ textarea.form-control.type-2 {
 }
 /* ticket-details page css end */
 
+/* deposite page css start */
+
+.deposite-title {
+  background: linear-gradient(270deg, #c59d78 0%, #f7d6b9 100%);
+  border-radius: 0px 0px 50px 0px;
+  color: #000000;
+  font-size: 26px;
+  padding: 20px 30px;
+  line-height: 1.1;
+  padding-bottom: 17px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 34px;
+  margin: 0;
+}
+.deposite-wrapper {
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.06));
+  border-radius: 100px 10px 10px 10px;
+  overflow: hidden;
+}
+.dps-top {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 350px auto;
+  align-items: center;
+  grid-gap: 60px;
+}
+.deposite-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.deposite-display .short-info {
+  margin: 0;
+  position: relative;
+  padding-right: 36px;
+}
+.deposite-display .short-info:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: calc(15px + 3vw);
+  background-color: #dedede;
+  width: 1px;
+  height: calc(100% + 30px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.dps-btm {
+  padding: 34px;
+}
+.dps-rw {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+  grid-gap: 30px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 50px 10px;
+  background-color: #fff;
+  padding: 20px 30px;
+  align-items: center;
+}
+.dps-rw .progress {
+  background-color: #e0c2a6;
+  height: 16px;
+  border-radius: 60px;
+  margin-top: 5px;
+}
+.dps-rw .progress .progress-bar {
+  background-color: #c0966e;
+}
+
+.deposite-display .s-text,
+.dps-rw .s-text {
+  color: #1c1c1c;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.deposite-display .short-info p,
+.dps-rw .short-info p {
+  color: #989898;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.dps-rw .s-text {
+  font-size: 22px;
+}
+.dps-rw .short-info {
+  margin: 0;
+}
+.short-info.with-progress-bar .s-text {
+  font-size: 17px;
+  margin-top: 4px;
+}
+.silver .deposite-title {
+  background: linear-gradient(270deg, #d8d7d7 0%, #e2e2e2 100%);
+}
+.gold .deposite-title {
+  background: linear-gradient(270deg, #f4bb26 0%, #bfa11c 100%);
+}
+.platinum .deposite-title {
+  background: linear-gradient(270deg, #b1bcbb 0%, #e3edec 100%);
+}
+.vip .deposite-title {
+  background: linear-gradient(270deg, #da1515 0%, #f7607b 100%);
+  color: #fff;
+}
+.three-m .deposite-title {
+  background: linear-gradient(270deg, #fff9c4 0%, #fbee7b 100%);
+}
+.six-m .deposite-title {
+  background: linear-gradient(270deg, #d6ebff 0%, #c9ebff 100%);
+}
+.nine-m .deposite-title {
+  background: linear-gradient(270deg, #dffffc 0%, #aefff7 100%);
+}
+.silver .dps-rw .progress {
+  background-color: #8e8e8e;
+}
+.silver .dps-rw .progress .progress-bar {
+  background-color: #dcdcdc;
+}
+.gold .dps-rw .progress {
+  background-color: #ae9114;
+}
+.gold .dps-rw .progress .progress-bar {
+  background-color: #f2ba26;
+}
+.platinum .dps-rw .progress {
+  background-color: #798584;
+}
+.platinum .dps-rw .progress .progress-bar {
+  background-color: #b6c1c0;
+}
+.vip .dps-rw .progress {
+  background-color: #964f4f;
+}
+.vip .dps-rw .progress .progress-bar {
+  background-color: #d5a6a6;
+}
+.three-m .dps-rw .progress {
+  background-color: #d6cd85;
+}
+.three-m .dps-rw .progress .progress-bar {
+  background-color: #ffed52;
+}
+.six-m .dps-rw .progress {
+  background-color: #66aee4;
+}
+.six-m .dps-rw .progress .progress-bar {
+  background-color: #b0dfff;
+}
+.nine-m .dps-rw .progress {
+  background-color: #539e97;
+}
+.nine-m .dps-rw .progress .progress-bar {
+  background-color: #b5fff8;
+}
+/* deposite page css end */
+
 /* Media Query */
 
+@media screen and (max-width: 1800px) {
+  .deposite-display .short-info:not(:last-child)::after {
+    right: calc(16px + 2vw);
+  }
+}
 @media screen and (max-width: 1600px) {
   .dpo-grid-wrap {
     grid-template-columns: auto 175px;
@@ -764,6 +926,13 @@ textarea.form-control.type-2 {
   .statis-wrap {
     grid-template-columns: 155px auto;
     border-bottom-right-radius: 115px;
+  }
+  .dps-top {
+    grid-template-columns: 280px auto;
+    grid-gap: 30px;
+  }
+  .deposite-display .short-info:not(:last-child)::after {
+    right: calc(16px + 1vw);
   }
 }
 @media screen and (max-width: 1439px) {
@@ -796,6 +965,17 @@ textarea.form-control.type-2 {
     font-size: 26px;
     padding: 14px;
     padding-left: 24px;
+  }
+  .dps-top {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    grid-gap: 40px;
+  }
+  .deposite-display {
+    padding-left: 34px;
+  }
+  .deposite-title {
+    border-bottom-right-radius: 0;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1350px) {
@@ -880,6 +1060,20 @@ textarea.form-control.type-2 {
   .single-ticket {
     grid-template-columns: 1fr;
     grid-gap: 45px;
+  }
+  .deposite-display .short-info:not(:last-child)::after {
+    right: calc(10px + 1vw);
+  }
+  .deposite-display .short-info {
+    padding-right: 34px;
+  }
+  .deposite-display .s-text,
+  .dps-rw .s-text {
+    font-size: 24px;
+  }
+  .dps-rw {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
   }
 }
 
@@ -993,6 +1187,49 @@ textarea.form-control.type-2 {
   }
   textarea.form-control.type-2 {
     height: 120px;
+  }
+  .deposite-title {
+    font-size: 20px;
+    padding: 14px 20px;
+    padding-bottom: 12px;
+  }
+  .deposite-display {
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-gap: 24px;
+  }
+  .deposite-display .short-info:not(:last-child)::after {
+    content: none;
+  }
+  .dps-btm {
+    padding: 20px 15px;
+  }
+  .dps-rw {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    padding: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .dps-rw .s-text {
+    font-size: 18px;
+  }
+  .short-info.with-progress-bar {
+    grid-column: 1/3;
+  }
+  .deposite-wrapper {
+    border-top-left-radius: 50px;
+  }
+  .dps-top {
+    margin-top: 24px;
+    grid-gap: 30px;
+  }
+  .dps-rw .progress {
+    height: 12px;
+  }
+  .deposite-display .short-info {
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 480px) {
