@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spino Deposite</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@500&family=Roboto&family=Sofia+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main Css  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header-area">
+      <div class="container-fluid px-3 px-lg-4">
+        <div class="header-inner py-3">
+          <div class="row align-items-center">
+            <div class="col-4">
+              <a href="#" class="d-inline-block logo"
+                ><img src="assets/img/logo.png" alt="" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-8">
+              <div class="d-flex align-items-center justify-content-end">
+                <div class="toggle-wrap d-flex align-items-center">
+                  <div
+                    class="toggle-switch position-relative"
+                    role="button"
+                  ></div>
+                  <span class="toggle-switch-text d-none d-md-inline-block ms-2"
+                    >Dark Mode</span
+                  >
+                </div>
+
+                <div class="security d-flex align-items-center">
+                  <svg
+                    width="20"
+                    height="22"
+                    viewBox="0 0 20 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.676 4.28357L10.8933 1.43987C10.3986 1.23248 9.84139 1.23248 9.34672 1.43987L2.56398 4.28357C1.73473 4.63124 1.23944 5.48958 1.35341 6.38152L2.07777 12.0504C2.30521 13.8304 3.20749 15.455 4.59829 16.5888L8.85629 20.06C9.59203 20.6598 10.648 20.6598 11.3837 20.06L15.6417 16.5888C17.0325 15.455 17.9348 13.8304 18.1623 12.0504L18.8866 6.38152C19.0006 5.48958 18.5053 4.63124 17.676 4.28357Z"
+                      stroke="#15A68C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M6.74669 11L9.69334 13.8826C9.9158 14.1002 10.2809 14.0639 10.4562 13.8067L14.6178 7.7"
+                      stroke="#15A68C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <span class="d-none d-md-inline-block">Security</span>
+                </div>
+
+                <div class="dropdown">
+                  <button
+                    class="toggle-menu d-flex align-items-center justify-content-center dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                    <svg
+                      class="open-sign"
+                      width="24"
+                      height="18"
+                      viewBox="0 0 28 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="28" height="5" rx="2.5" fill="#9B9B9B" />
+                      <rect
+                        y="9"
+                        width="28"
+                        height="5"
+                        rx="2.5"
+                        fill="#9B9B9B"
+                      />
+                      <rect
+                        y="18"
+                        width="28"
+                        height="5"
+                        rx="2.5"
+                        fill="#9B9B9B"
+                      />
+                    </svg>
+
+                    <svg
+                      class="close-sign position-absolute"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.33252"
+                        y="20.6318"
+                        width="28"
+                        height="5"
+                        rx="2.5"
+                        transform="rotate(-45 0.33252 20.6318)"
+                        fill="#9B9B9B"
+                      />
+                      <rect
+                        width="28"
+                        height="5"
+                        rx="2.5"
+                        transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 23.667 20.6318)"
+                        fill="#9B9B9B"
+                      />
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu style-1">
+                    <div class="ds-menu">
+                      <div class="profile-zone">
+                        <div class="profile-avater">
+                          <img
+                            class="img-fluid"
+                            src="assets/img/profile.png"
+                            alt=""
+                          />
+                          <h5 class="text-truncate">
+                            Elahe Azizi Elahe Azizi Elahe Azizi
+                          </h5>
+                        </div>
+                        <button
+                          class="edit-profile bg-transparent d-flex align-items-center justify-content-end ms-auto border-0 p-0"
+                        >
+                          <svg
+                            class="me-1"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M6.37908 0C6.84512 0 7.23533 0.353138 7.2817 0.81686C7.35371 1.53698 8.19861 1.88695 8.75874 1.42867C9.11943 1.13356 9.64505 1.15978 9.97459 1.48931L10.5107 2.02539C10.8402 2.35493 10.8664 2.88056 10.5713 3.24126C10.113 3.80139 10.463 4.64631 11.1831 4.71832C11.6469 4.76469 12 5.15491 12 5.62095V6.37913C12 6.84513 11.6469 7.23532 11.1832 7.28169C10.4631 7.35369 10.1132 8.1985 10.5714 8.75855C10.8665 9.1192 10.8402 9.64476 10.5107 9.97425L9.97458 10.5104C9.64505 10.8399 9.11943 10.8662 8.75875 10.5711C8.19863 10.1128 7.35373 10.4629 7.28172 11.183C7.23534 11.6468 6.84508 12 6.379 12H5.62096C5.15492 12 4.7647 11.6469 4.71833 11.1831C4.64631 10.463 3.80139 10.113 3.24126 10.5713C2.88056 10.8664 2.35492 10.8402 2.02538 10.5107L1.48931 9.9746C1.15977 9.64506 1.13356 9.11943 1.42867 8.75874C1.88695 8.19861 1.53698 7.3537 0.81686 7.28169C0.353137 7.23532 0 6.84511 0 6.37907V5.62101C0 5.15494 0.353168 4.76469 0.816932 4.71831C1.53712 4.64629 1.88708 3.80127 1.42876 3.24109C1.13361 2.88035 1.15981 2.35462 1.48939 2.02504L2.02537 1.48906C2.35492 1.15952 2.88061 1.13334 3.24131 1.42846C3.80139 1.88671 4.64633 1.53685 4.71834 0.816789C4.7647 0.353107 5.15488 0 5.62088 0H6.37908ZM5.99999 8.40001C7.32547 8.40001 8.39999 7.32549 8.39999 6.00001C8.39999 4.67452 7.32547 3.60001 5.99999 3.60001C4.6745 3.60001 3.59999 4.67452 3.59999 6.00001C3.59999 7.32549 4.6745 8.40001 5.99999 8.40001Z"
+                              fill="#31506F"
+                            />
+                          </svg>
+                          Edit Profile
+                        </button>
+                      </div>
+                      <div class="balanace-zone">
+                        <div class="balance">
+                          <span>Balance</span>
+                          <strong>$298371664.23</strong>
+                        </div>
+                        <a
+                          href="#"
+                          class="position-relative text-center d-flex align-items-center justify-content-center rd-btn"
+                          ><img
+                            class="position-absolute"
+                            src="assets/img/invest-icon.png"
+                            alt=""
+                          />
+                          Invest</a
+                        >
+                        <a
+                          href="#"
+                          class="position-relative text-center d-flex align-items-center justify-content-center rd-btn fill-dark-lebu"
+                          ><img
+                            class="position-absolute"
+                            src="assets/img/withdraw-icon.png"
+                            alt=""
+                          />
+                          Withdraw</a
+                        >
+                      </div>
+                      <ul class="menu-zone">
+                        <li>
+                          <a href="#"
+                            ><img src="assets/img/i-1.png" alt="" /><span
+                              >Dashboard</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="assets/img/i-2.png" alt="" /><span
+                              >Tickets</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="assets/img/i-3.png" alt="" /><span
+                              >Fund Transfer</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="assets/img/i-4.png" alt="" /><span
+                              >Deposits</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="assets/img/i-5.png" alt="" /><span
+                              >History</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="assets/img/i-6.png" alt="" /><span
+                              >Ref. History</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="assets/img/i-7.png" alt="" /><span
+                              >My Refs</span
+                            ></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="assets/img/i-8.png" alt="" /><span
+                              >Promo Tools</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                      <div class="logout-zone">
+                        <button
+                          class="sign-out-btn w-100 position-absolute bottom-0 start-0 end-0 border-0 overflow-hidden"
+                        >
+                          SIGNOUT
+                          <span
+                            class="power-icon d-flex align-items-center justify-content-center"
+                            ><img
+                              src="assets/img/power-icon.png"
+                              alt=""
+                              class="img-fluid"
+                          /></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid px-4">
+        <div class="dashboard-outer">
+          <div class="dashboard-left mt-0 position-relative d-none d-xl-block">
+            <div class="ds-menu">
+              <div class="profile-zone">
+                <div class="profile-avater">
+                  <img class="img-fluid" src="assets/img/profile.png" alt="" />
+                  <h5 class="text-truncate">
+                    Elahe Azizi Elahe Azizi Elahe Azizi
+                  </h5>
+                </div>
+                <button
+                  class="edit-profile bg-transparent d-flex align-items-center justify-content-end ms-auto border-0 p-0"
+                >
+                  <svg
+                    class="me-1"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.37908 0C6.84512 0 7.23533 0.353138 7.2817 0.81686C7.35371 1.53698 8.19861 1.88695 8.75874 1.42867C9.11943 1.13356 9.64505 1.15978 9.97459 1.48931L10.5107 2.02539C10.8402 2.35493 10.8664 2.88056 10.5713 3.24126C10.113 3.80139 10.463 4.64631 11.1831 4.71832C11.6469 4.76469 12 5.15491 12 5.62095V6.37913C12 6.84513 11.6469 7.23532 11.1832 7.28169C10.4631 7.35369 10.1132 8.1985 10.5714 8.75855C10.8665 9.1192 10.8402 9.64476 10.5107 9.97425L9.97458 10.5104C9.64505 10.8399 9.11943 10.8662 8.75875 10.5711C8.19863 10.1128 7.35373 10.4629 7.28172 11.183C7.23534 11.6468 6.84508 12 6.379 12H5.62096C5.15492 12 4.7647 11.6469 4.71833 11.1831C4.64631 10.463 3.80139 10.113 3.24126 10.5713C2.88056 10.8664 2.35492 10.8402 2.02538 10.5107L1.48931 9.9746C1.15977 9.64506 1.13356 9.11943 1.42867 8.75874C1.88695 8.19861 1.53698 7.3537 0.81686 7.28169C0.353137 7.23532 0 6.84511 0 6.37907V5.62101C0 5.15494 0.353168 4.76469 0.816932 4.71831C1.53712 4.64629 1.88708 3.80127 1.42876 3.24109C1.13361 2.88035 1.15981 2.35462 1.48939 2.02504L2.02537 1.48906C2.35492 1.15952 2.88061 1.13334 3.24131 1.42846C3.80139 1.88671 4.64633 1.53685 4.71834 0.816789C4.7647 0.353107 5.15488 0 5.62088 0H6.37908ZM5.99999 8.40001C7.32547 8.40001 8.39999 7.32549 8.39999 6.00001C8.39999 4.67452 7.32547 3.60001 5.99999 3.60001C4.6745 3.60001 3.59999 4.67452 3.59999 6.00001C3.59999 7.32549 4.6745 8.40001 5.99999 8.40001Z"
+                      fill="#31506F"
+                    />
+                  </svg>
+                  Edit Profile
+                </button>
+              </div>
+              <div class="balanace-zone">
+                <div class="balance">
+                  <span>Balance</span>
+                  <strong>$298371664.23</strong>
+                </div>
+                <a
+                  href="#"
+                  class="position-relative text-center d-flex align-items-center justify-content-center rd-btn"
+                  ><img
+                    class="position-absolute"
+                    src="assets/img/invest-icon.png"
+                    alt=""
+                  />
+                  Invest</a
+                >
+                <a
+                  href="#"
+                  class="position-relative text-center d-flex align-items-center justify-content-center rd-btn fill-dark-lebu"
+                  ><img
+                    class="position-absolute"
+                    src="assets/img/withdraw-icon.png"
+                    alt=""
+                  />
+                  Withdraw</a
+                >
+              </div>
+              <ul class="menu-zone">
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/i-1.png" alt="" /><span
+                      >Dashboard</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/i-2.png" alt="" /><span
+                      >Tickets</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/i-3.png" alt="" /><span
+                      >Fund Transfer</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/i-4.png" alt="" /><span
+                      >Deposits</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/i-5.png" alt="" /><span
+                      >History</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/i-6.png" alt="" /><span
+                      >Ref. History</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/i-7.png" alt="" /><span
+                      >My Refs</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/i-8.png" alt="" /><span
+                      >Promo Tools</span
+                    ></a
+                  >
+                </li>
+              </ul>
+              <div class="logout-zone">
+                <button
+                  class="sign-out-btn w-100 position-absolute bottom-0 start-0 end-0 border-0 overflow-hidden"
+                >
+                  <span class="d-block pe-3 text-end">SIGNOUT</span>
+                  <span
+                    class="power-icon d-flex align-items-center justify-content-center"
+                    ><img
+                      src="assets/img/power-icon.png"
+                      alt=""
+                      class="img-fluid"
+                  /></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-right">
+            <div class="deposite-wrapper bg-white shadow-one mb-4"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap Js and popper js (for dropdown and modals) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function darkMode(btn) {
+          btn.classList.toggle("active");
+        }
+        const toggleSwitch = document.querySelector(".toggle-switch");
+        toggleSwitch.addEventListener("click", function () {
+          darkMode(this);
+        });
+      });
+    </script>
+  </body>
+</html>
