@@ -889,6 +889,83 @@ textarea.form-control.type-2 {
 }
 /* deposite page css end */
 
+/* withdraw-funds page css start */
+
+.ddl-g-wrapper {
+  display: grid;
+  grid-template-columns: auto 600px;
+  grid-gap: 100px;
+}
+.doller-cirlce img {
+  max-width: 70%;
+}
+.one-third-btns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 15px;
+}
+.short-info.green::before {
+  background-color: #c8f9c4;
+}
+.short-info.red::before {
+  background-color: #fccaca;
+}
+
+.short-info.type-4 .s-text {
+  color: #435871;
+  font-size: 22px;
+}
+.short-info.type-4 p {
+  color: #adadad;
+}
+.withdraw-balances {
+  margin-bottom: 20px;
+}
+.short-info.type-4 {
+  margin-bottom: 10px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.two .short-info.type-4::before {
+  width: 4px;
+}
+.two .short-info.type-4 {
+  padding-left: 12px;
+}
+.cmn-ttl.black {
+  color: #000;
+}
+
+.rd-btn-2.fill-red-blood {
+  background-color: #f24a4a;
+  border-color: #f24a4a;
+  color: #fff;
+}
+.rd-btn-2.fill-red-blood:hover {
+  color: #f24a4a;
+  background-color: transparent;
+}
+.one-third-btns.two {
+  max-width: 280px;
+}
+.min-h-auto {
+  min-height: auto;
+}
+.doller-cirlce {
+  margin-top: -90px;
+}
+.doller-cirlce.mt-0 {
+  margin-top: -28px !important;
+}
+.type-2 + .cmn-pad-wrap {
+  padding-bottom: 40px;
+}
+.ddl-g-wrapper form {
+  max-width: 600px;
+}
+/* withdraw-funds page css end */
+
 /* Media Query */
 
 @media screen and (max-width: 1800px) {
@@ -934,6 +1011,13 @@ textarea.form-control.type-2 {
   .deposite-display .short-info:not(:last-child)::after {
     right: calc(16px + 1vw);
   }
+  .ddl-g-wrapper {
+    grid-template-columns: auto 450px;
+    grid-gap: 30px;
+  }
+  .doller-cirlce img {
+    max-width: 95%;
+  }
 }
 @media screen and (max-width: 1439px) {
   .card-twin-grid {
@@ -976,6 +1060,16 @@ textarea.form-control.type-2 {
   }
   .deposite-title {
     border-bottom-right-radius: 0;
+  }
+  .ddl-g-wrapper {
+    grid-template-columns: auto 330px;
+    grid-gap: 30px;
+  }
+  .doller-cirlce {
+    margin-top: 0;
+  }
+  .doller-cirlce.mt-0 {
+    margin-top: 0 !important;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1350px) {
@@ -1074,6 +1168,13 @@ textarea.form-control.type-2 {
   .dps-rw {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 15px;
+  }
+
+  .doller-cirlce {
+    display: none;
+  }
+  .ddl-g-wrapper {
+    display: block;
   }
 }
 
@@ -1230,6 +1331,16 @@ textarea.form-control.type-2 {
   }
   .deposite-display .short-info {
     padding-right: 0;
+  }
+  .type-2 + .cmn-pad-wrap {
+    padding-bottom: 20px;
+  }
+  .one-third-btns {
+    grid-template-columns: 1fr;
+  }
+  .short-info.type-4 .s-text {
+    color: #435871;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
