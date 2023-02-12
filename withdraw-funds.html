@@ -23,9 +23,6 @@
 
     <!-- Main Css  -->
     <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!-- Plugin Css -->
-    <link rel="stylesheet" href="assets/css/light.css" />
   </head>
   <body>
     <header class="header-area">
@@ -428,48 +425,16 @@
                     </div>
                     <div class="input-wrap mb-4">
                       <label for="">Choose Payment Method</label>
-                      <select
-                        id="coin-selector"
-                        name="simple"
-                        data-placeholder="Select something please .."
+                      <button
+                        id="select_token"
+                        class="select_token position-relative"
                       >
-                        <option
-                          value="1"
-                          data-image="assets/img/token-usdt.svg"
-                        >
-                          Tether TRC20
-                        </option>
-                        <option
-                          value="2"
-                          data-image="assets/img/token-usdc.svg"
-                        >
-                          USDC
-                        </option>
-                        <option
-                          value="3"
-                          data-image="assets/img/token-tusd.svg"
-                        >
-                          TUSD
-                        </option>
-                        <option value="4" data-image="assets/img/token-dai.svg">
-                          DAI
-                        </option>
-                        <option
-                          value="5"
-                          data-image="assets/img/token-paxos.svg"
-                        >
-                          PAX
-                        </option>
-                        <option value="6" data-image="assets/img/token-eth.svg">
-                          ETH
-                        </option>
-                        <option
-                          value="7"
-                          data-image="assets/img/token-wbtc.svg"
-                        >
-                          WBTC
-                        </option>
-                      </select>
+                        <img
+                          src="assets/img/trc-20.png"
+                          alt=""
+                          class="img-fluid"
+                        />Tether TRC20
+                      </button>
                     </div>
                     <div class="input-wrap mb-4">
                       <label for="">Amount to Withdraw</label>
@@ -578,10 +543,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="assets/js/lc_select.min.js"></script>
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        // Script for toggleSwitch in header for theme mode
         function darkMode(btn) {
           btn.classList.toggle("active");
         }
@@ -590,7 +554,13 @@
           darkMode(this);
         });
 
-        new lc_select("#coin-selector");
+        // Script for toggle select token
+        document
+          .getElementById("select_token")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            this.classList.toggle("active");
+          });
       });
     </script>
   </body>
