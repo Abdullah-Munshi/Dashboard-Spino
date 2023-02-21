@@ -1004,6 +1004,60 @@ textarea.form-control.type-2 {
 }
 /* withdraw-funds page css end */
 
+/* edit-profile page css start */
+.style-1 .form-control {
+  padding: 0 14px;
+  height: 44px;
+  border: 1px solid #dfdfdf;
+  border-radius: 0;
+  padding-right: 30px;
+}
+.style-1 .form-control:focus {
+  border-color: #c8f9c4;
+  box-shadow: 0 0 0 0.25rem rgba(200, 249, 196, 0.4);
+}
+.input-icon {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.edit-pf-g-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  margin-bottom: 30px;
+}
+.edit-blk-rw {
+  border-left: 5px solid #c8f9c4;
+}
+.edit-blk-rw .form-control {
+  border-left: 0 !important;
+  color: #4c6079;
+}
+.edit-blk-rw label,
+.edit-blk-rw .label-p {
+  padding-left: 14px;
+  margin-bottom: 7px;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.edit-blk-rw .toggle-wrap {
+  margin-left: 14px;
+}
+.toggle-switch.style-2.active {
+  background-color: #dfdfdf;
+}
+.toggle-switch.style-2.active:after {
+  background-color: #87ec7e;
+}
+/* edit-profile page css end */
+
 /* Media Query */
 
 @media screen and (max-width: 1800px) {
@@ -1108,6 +1162,9 @@ textarea.form-control.type-2 {
   }
   .doller-cirlce.mt-0 {
     margin-top: 0 !important;
+  }
+  .edit-pf-g-wrap {
+    grid-column-gap: 24px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1350px) {
@@ -1382,6 +1439,11 @@ textarea.form-control.type-2 {
   }
   .select_token .span {
     font-size: 19px;
+  }
+  .edit-pf-g-wrap {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    margin-bottom: 24px;
   }
 }
 @media screen and (max-width: 480px) {
