@@ -628,6 +628,7 @@ body {
   border: 0;
   font-family: "Poppins", sans-serif;
 }
+.pagination li a.active,
 .pagination li a:hover {
   color: #f2994a;
 }
@@ -1058,6 +1059,148 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /* edit-profile page css end */
 
+/* history page css start */
+.para-p {
+  font-size: 15px;
+  color: #717171;
+  font-family: Roboto;
+}
+.edit-blk-rw .para-p {
+  padding-left: 12px;
+}
+.edit-blk-rw.orange {
+  border-color: #f2994a;
+}
+.edit-blk-rw.gray {
+  border-color: #dadada;
+}
+.edit-blk-rw.type-2 {
+  border-color: #31506f;
+  padding: 24px;
+}
+.placeholder-promo {
+  margin-bottom: 10px;
+}
+.promo-tools-link {
+  border: 1px solid #f2994a;
+  padding: 14px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+.cmn-pad-wrap .edit-blk-rw.type-2 {
+  margin-bottom: 30px;
+}
+
+.referrals-g-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.edit-blk-rw.type-2.two {
+  padding: 20px;
+}
+.referral-content .short-info::before {
+  content: none;
+}
+.referral-img {
+  margin-bottom: 15px;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.referral-content .short-info .s-text {
+  color: #4c6079;
+}
+.referral-content .short-info p {
+  color: #adadad;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.grid-table .tbl-head,
+.grid-table .tbl-rw {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr;
+}
+.grid-table .tbl-rw {
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #ededed;
+}
+.tbl-th,
+.tbl-td {
+  font-family: "Roboto", sans-serif;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+}
+.tbl-head .tbl-th {
+  color: #fff;
+  font-size: 18px;
+}
+.tbl-td {
+  font-size: 16px;
+  color: #595959;
+}
+.tbl-head {
+  background-color: #31506f;
+}
+.tbl-head {
+  background-color: #31506f;
+  border-top-left-radius: 30px;
+}
+.tbl-rw .tbl-td:last-child {
+  border-right: 0;
+}
+.tbl-td p {
+  margin-bottom: 0;
+}
+
+.td-amount img {
+  width: 33px;
+  margin-right: 10px;
+}
+.dt-content span {
+  font-size: 14px;
+  color: #595959;
+}
+.tbl-body .tbl-rw:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.left-border::before {
+  content: "";
+  width: 3px;
+  height: 115%;
+  background-color: #d9d9d9;
+  position: absolute;
+  left: -25px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+.rg-total .short-info .s-text {
+  color: #595959;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.five-blk-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 170px;
+  grid-gap: 24px;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.five-blk-grid .edit-blk-rw {
+  margin: 0 !important;
+}
+.orange .style-1 .form-control:focus {
+  border-color: rgba(242, 152, 74, 0.796);
+  box-shadow: 0 0 0 0.25rem rgba(242, 152, 74, 0.1);
+}
+/* history page css end */
+
 /* Media Query */
 
 @media screen and (max-width: 1800px) {
@@ -1166,6 +1309,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .edit-pf-g-wrap {
     grid-column-gap: 24px;
   }
+  .five-blk-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media screen and (min-width: 1200px) and (max-width: 1350px) {
   .short-info-wrap .short-info:not(:last-child) {
@@ -1270,6 +1416,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   .ddl-g-wrapper {
     display: block;
+  }
+  .referrals-g-wrapper {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1444,6 +1593,41 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     grid-template-columns: 1fr;
     grid-gap: 24px;
     margin-bottom: 24px;
+  }
+  .five-blk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-scroller {
+    overflow-x: scroll;
+  }
+  .grid-table {
+    min-width: 767px;
+  }
+  .blk-total-bar {
+    flex-direction: column-reverse;
+  }
+  .blk-total-bar .short-info {
+    margin-bottom: 10px;
+  }
+  .referral-img img {
+    max-width: 90px;
+    max-height: 65px;
+  }
+  .referral-img {
+    min-height: 65px;
+    justify-content: center;
+  }
+  .edit-blk-rw.type-2.two {
+    border: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .referral-content .short-info .s-text {
+    font-size: 18px;
+  }
+  .promo-tools-link {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {
