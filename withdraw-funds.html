@@ -424,17 +424,30 @@
                       </div>
                     </div>
                     <div class="input-wrap mb-4">
-                      <label for="">Choose Payment Method</label>
-                      <button
-                        id="select_token"
-                        class="select_token position-relative"
+                      <p class="label-p">Choose Payment Method</p>
+                      <label
+                        for="select_token"
+                        class="select_token d-inline-block position-relative"
                       >
-                        <img
-                          src="assets/img/trc-20.png"
-                          alt=""
-                          class="img-fluid"
-                        />Tether TRC20
-                      </button>
+                        <input
+                          type="checkbox"
+                          id="select_token"
+                          class="position-absolute"
+                          style="
+                            max-width: 0;
+                            max-height: 0;
+                            opacity: 0;
+                            visibility: hidden;
+                          "
+                        />
+                        <span class="span position-relative">
+                          <img
+                            src="assets/img/trc-20.png"
+                            alt=""
+                            class="img-fluid"
+                          />Tether TRC20
+                        </span>
+                      </label>
                     </div>
                     <div class="input-wrap mb-4">
                       <label for="">Amount to Withdraw</label>
@@ -553,14 +566,6 @@
         toggleSwitch.addEventListener("click", function () {
           darkMode(this);
         });
-
-        // Script for toggle select token
-        document
-          .getElementById("select_token")
-          .addEventListener("click", function (e) {
-            e.preventDefault();
-            this.classList.toggle("active");
-          });
       });
     </script>
   </body>
