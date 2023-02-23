@@ -37,10 +37,12 @@
             <div class="col-8">
               <div class="d-flex align-items-center justify-content-end">
                 <div class="toggle-wrap d-flex align-items-center">
-                  <div
-                    class="toggle-switch position-relative"
-                    role="button"
-                  ></div>
+                  <label class="toggle-switch position-relative">
+                    <input type="checkbox" class="position-absolute" />
+                    <span
+                      class="position-absolute w-100 h-100 start-0 end-0 top-0 bottom-0"
+                    ></span>
+                  </label>
                   <span class="toggle-switch-text d-none d-md-inline-block ms-2"
                     >Dark Mode</span
                   >
@@ -558,10 +560,12 @@
                       Receive earnings directly to e-currency account
                     </p>
                     <div class="toggle-wrap d-flex align-items-center">
-                      <div
-                        class="toggle-switch style-2 position-relative"
-                        role="button"
-                      ></div>
+                      <label class="toggle-switch position-relative mb-0">
+                        <input type="checkbox" class="position-absolute" />
+                        <span
+                          class="position-absolute w-100 h-100 start-0 end-0 top-0 bottom-0"
+                        ></span>
+                      </label>
                       <span
                         class="toggle-switch-text d-none d-md-inline-block ms-2"
                         >Yes/No</span
@@ -588,20 +592,5 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Script for toggleSwitch in header for theme mode
-        function darkMode(btn) {
-          btn.classList.toggle("active");
-        }
-        const toggleSwitch = document.querySelectorAll(".toggle-switch");
-        toggleSwitch.forEach((each) =>
-          each.addEventListener("click", function () {
-            darkMode(this);
-          })
-        );
-      });
-    </script>
   </body>
 </html>
